@@ -1,0 +1,58 @@
+﻿@model Musicalog.Web.Models.AlbumViewModel
+
+@{
+    ViewBag.Title = "Detail";
+}
+
+<h2>Detail</h2>
+
+<div>
+    <h4>AlbumViewModel</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.AlbumName)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.AlbumName)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Artist)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Artist)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.MediaType)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.MediaType)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.RecordLabel)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.RecordLabel)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Stock)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Stock)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.Id }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>
